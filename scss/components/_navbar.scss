@@ -1,0 +1,53 @@
+$primary-color: white;
+$secondary-color: black;
+$terciary-color: #f3f3f3;
+
+
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    min-height:8vh;
+    background-color: $terciary-color;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid $secondary-color 2px;
+
+    .navbar__logo{
+        width: 35%;
+        height: 35%;  
+        margin-top: 5px;
+    }
+
+    .navbar__menu{
+        display:flex;
+        padding:0;
+    }
+
+    .navbar__list{
+        padding: 0 40px;
+        list-style-type: none;
+        transition: 0.3s;
+    }
+
+    .navbar__link{
+        text-decoration:none;
+        font-size: 1.8rem;
+        color: $secondary-color;
+        font-weight:600;
+        padding: 5px;
+
+        &:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+            transition: 0.5s;
+        }
+    }
+}
+
+.bg{
+    padding-top: 8rem;
+}

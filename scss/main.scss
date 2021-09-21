@@ -1,0 +1,247 @@
+@import 'base/base';
+@import 'components/navbar';
+@import 'components/btn';
+@import 'components/slider';
+@import 'utils/animations';
+@import 'layout/screens';
+@import 'utils/variables';
+@import 'layout/diseño';
+
+.main-container{
+    margin: 200px auto;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+
+    .main__title{
+        background-color: $secondary-color;
+        color: $primary-color;
+        font-size: 3rem;
+    }
+
+    .main__text{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .main__btn{
+        background-color: transparent;
+        width: 200px;
+        height: 50px;
+        border: solid $secondary-color 2px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+            transition: 0.5s;
+        }
+    }
+}
+
+.bg{
+    background: url(/img/fondo1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 85vh;
+}
+
+#servicios{
+
+    margin-top: 0px;
+
+    .servicios__title{
+        font-size: 4rem;
+        text-align: center;
+        margin: 0 80px auto auto;
+        width: 100vw;
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+
+    .servicios__main{
+        display: flex;
+        align-items:center;
+        text-align: center;
+        justify-content: space-around;
+        margin: 100px;
+    }
+    
+    .servicios__imgs{
+        clip-path: circle(50% at 50% 50%);
+        height: 250px;
+        width: 250px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .servicios__image{
+        transition: all 500ms ease-in-out;
+    }
+
+    .servicios__img-bg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(11,183,123,0.6);
+        transition: all 500ms ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .servicios__imgs:hover  > .servicios__img-bg{
+        opacity: 1;
+        visibility: visible; 
+    }
+
+    .servicios__text-bg{
+        font-size: 2rem;
+        padding: 15px;
+        margin-top: 25px;
+    }
+
+    .servicio__main-btn{
+
+        text-align: center;
+
+        .servicio__btn{
+            background-color: transparent;
+            width: 200px;
+            height: 50px;
+            border: solid $secondary-color 2px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            cursor: pointer;
+        
+            &:hover{
+                color: $primary-color;
+                background-color: $secondary-color;
+                transition: 0.5s;
+            }  
+        }
+    }
+        
+}
+
+.contacto__bg{
+    border-top: 2px $secondary-color solid;
+    background-color: $terciary-color;
+    background: cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    .contacto__title{
+        font-size: 2rem;
+    }
+
+    .contacto__menu{
+        display: flex;
+        padding: 20px;
+    }
+
+    .contacto__list{
+        list-style-type: none;
+        padding: 0 40px;
+    }
+
+    .contacto__link{
+        font-size: 5rem;
+        color: $secondary-color;
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    
+}
+
+.contacto__num{
+    list-style-type: none;
+    font-size: 2rem;
+    margin: auto;
+}
+
+#diseños{
+
+    margin-bottom: 10vh;
+
+    .diseños__title{
+        font-size: 4rem;
+        text-align: center;
+        margin: 80px auto;
+        width: 100vw;
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+
+    .diseño__main-btn{
+
+        margin-top: 10rem;
+        text-align: center;
+
+        .diseño__btn{
+            background-color: transparent;
+            width: 200px;
+            height: 50px;
+            border: solid $secondary-color 2px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            cursor: pointer;
+        
+            &:hover{
+                color: $primary-color;
+                background-color: $secondary-color;
+                transition: 0.5s;
+            }  
+        }
+    }
+}
+
+#alquileres{
+    
+    .card__title{
+        font-size: 4rem;
+        text-align: center;
+        margin: 80px auto;
+        width: 100vw;
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+
+    .card__alquileres{
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        .card__img-main{
+            margin: auto 10px;
+            
+            .card__text{
+                font-size: 2rem;
+                border-top: black 2px solid;
+                border-bottom: black 2px solid;
+            }   
+        }
+    }
+
+    .turnos__title{
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        height: 35px;
+        color: $primary-color;
+        background-color: $secondary-color;
+    }
+}
+
+
+
+
+
+
+
