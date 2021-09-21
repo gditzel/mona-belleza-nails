@@ -434,6 +434,17 @@ body {
   color: white;
 }
 
+#servicios .servicios__text {
+  font-size: 2rem;
+}
+
+#servicios .servicios__text:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #servicios .servicios__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,5 +635,52 @@ body {
   height: 35px;
   color: white;
   background-color: black;
+}
+
+#servicios__main {
+  margin-top: 9vh;
+}
+
+#servicios__main .card__title-servicios {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 1px;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+#servicios__main .card__title-serviciosh2 {
+  font-size: 1.6rem;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+#servicios__main .card__servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 5rem;
+  padding: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: black 5px solid;
+  border-radius: 5px;
+}
+
+#servicios__main .card__servicios .card__img-main-servicios {
+  margin: auto 10px;
+  height: 650px;
+  width: 350px;
+  border: black 2px solid;
+  border-radius: 5px;
+}
+
+#servicios__main .card__servicios .card__img-main-servicios .card__text-servicios {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

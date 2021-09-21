@@ -60,6 +60,16 @@
         color: $primary-color;
     }
 
+    .servicios__text{
+        font-size: 2rem;
+
+        &:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+            transition: 0.5s;
+        }
+    }
+
     .servicios__main{
         display: flex;
         align-items:center;
@@ -222,8 +232,8 @@
             
             .card__text{
                 font-size: 2rem;
-                border-top: black 2px solid;
-                border-bottom: black 2px solid;
+                border-top: $secondary-color 2px solid;
+                border-bottom: $secondary-color 2px solid;
             }   
         }
     }
@@ -236,6 +246,49 @@
         height: 35px;
         color: $primary-color;
         background-color: $secondary-color;
+    }
+}
+
+#servicios__main{
+    
+    margin-top: 9vh;
+
+    .card__title-servicios{
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 1px;
+        width: 100vw;
+        background-color: $secondary-color;
+        color: $primary-color;
+        display: inline-block;
+    }
+
+    .card__title-serviciosh2{
+        font-size: 1.6rem;
+        text-decoration: underline 2px;
+    }
+
+    .card__servicios{
+        display: flex;
+        margin: 2rem 5rem;
+        padding: 25px;
+        align-items: center;
+        text-align: center;
+        border: $secondary-color 5px solid;
+        border-radius: 5px;
+
+        .card__img-main-servicios{
+            margin: auto 10px;
+            height: 650px;
+            width: 350px;
+            border: $secondary-color 2px solid;
+            border-radius: 5px;
+            
+            .card__text-servicios{
+                font-size: 2rem;
+            }   
+        }
     }
 }
 
