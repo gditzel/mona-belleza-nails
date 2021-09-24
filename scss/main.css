@@ -29,17 +29,10 @@ body {
       justify-content: space-around;
   min-height: 8vh;
   background-color: #f3f3f3;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1;
   border-bottom: solid black 2px;
 }
 
 .navbar .navbar__logo {
-  width: 35%;
-  height: 35%;
   margin-top: 5px;
 }
 
@@ -47,11 +40,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
 }
 
 .navbar .navbar__list {
-  padding: 0 40px;
   list-style-type: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -62,7 +53,6 @@ body {
   font-size: 1.8rem;
   color: black;
   font-weight: 600;
-  padding: 5px;
 }
 
 .navbar .navbar__link:hover {
@@ -178,186 +168,8 @@ body {
   background-position: center;
 }
 
-@-webkit-keyframes muestraMenu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes muestraMenu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.navbar__menu.activado {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: muestraMenu 350ms ease-in-out both;
-          animation: muestraMenu 350ms ease-in-out both;
-}
-
-.br-1.animado {
-  -webkit-transform: rotate(-45deg) translate(-10px, 8px);
-          transform: rotate(-45deg) translate(-10px, 8px);
-}
-
-.br-2.animado {
-  opacity: 0;
-}
-
-.br-3.animado {
-  -webkit-transform: rotate(45deg) translate(-10px, -8px);
-          transform: rotate(45deg) translate(-10px, -8px);
-}
-
-.navbar__btn:hover {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-/*@media (max-width: 768px) {
-
-    body {
-        overflow: hidden;
-    }
-
-    .navbar__btn {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        top: 40px;
-        right: 25px;
-        -webkit-transition: 0.2s  0.1s;
-        transition: 0.2s  0.1s;
-    }
-
-    .navbar {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    .navbar__logo {
-        padding-left: 25px;
-        width: 30%;
-        height: 30%;
-        top: 5px;
-        margin: 0;
-    }
-
-    .navbar__menu {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 92vh;
-        margin: 0;
-        padding: 0;
-        display: none;
-        opacity: 0;
-        -webkit-transition: opacity 5s ease-out;
-        transition: opacity 5s ease-out;
-        width: 100%;
-    }
-
-    .navbar__list {
-        text-align: center;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .servicios__main{
-        display: inline-flex;
-        flex-wrap: wrap;
-    }
-
-    .contacto__bg{
-        display: inline-flex;
-        flex-wrap: wrap;
-
-        .contacto__num{
-            font-size: 1.3rem;
-        }
-
-        .contacto__arrow{
-            display: none;
-        }
-    }
-}*/
-@media (max-width: 576px) {
-  body {
-    overflow: hidden;
-  }
-  .navbar__btn {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 40px;
-    right: 25px;
-    -webkit-transition: 0.2s  0.1s;
-    transition: 0.2s  0.1s;
-  }
-  .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .navbar__logo {
-    padding-left: 25px;
-    width: 30%;
-    height: 30%;
-    top: 5px;
-    margin: 0;
-  }
-  .navbar__menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 92vh;
-    margin: 0;
-    padding: 0;
-    display: none;
-    opacity: 0;
-    -webkit-transition: opacity 5s ease-out;
-    transition: opacity 5s ease-out;
-    width: 100%;
-  }
-  .navbar__list {
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-  }
+#grid__main {
+  margin-top: 16vh;
 }
 
 .grid-container {
@@ -380,25 +192,95 @@ body {
   margin-top: 20px;
 }
 
+.imagen3 {
+  margin-top: 30px;
+}
+
+.navbar__btn {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  -webkit-transition: 0.2s  0.1s;
+  transition: 0.2s  0.1s;
+}
+
+.navbar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar__logo {
+  padding-left: 25px;
+  width: 30%;
+  height: 30%;
+  top: 5px;
+  margin: 0;
+}
+
+.navbar__menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2vh;
+  margin: 0;
+  padding: 0;
+  display: none;
+  opacity: 0;
+  width: 100%;
+}
+
+.navbar__list {
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar__link i {
+  display: none;
+}
+
+/* --------------------------------------------------------- */
 .main-container {
-  margin: 200px auto;
-  width: 400px;
+  margin: 150px auto auto auto;
+  width: 350px;
   height: 500px;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main-container .main__title {
+.main__title {
   background-color: black;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
-.main-container .main__text {
+.main__text {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.main-container .main__btn {
+.main__btn {
   background-color: transparent;
   width: 200px;
   height: 50px;
@@ -408,7 +290,7 @@ body {
   cursor: pointer;
 }
 
-.main-container .main__btn:hover {
+.main__btn:hover {
   color: white;
   background-color: black;
   -webkit-transition: 0.5s;
@@ -416,26 +298,61 @@ body {
 }
 
 .bg {
-  background: url(/img/fondo1.jpg) no-repeat center center fixed;
+  padding-top: 1vh;
+  background: url(/img/fondo.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: 85vh;
 }
 
-#servicios {
-  margin-top: 0px;
+/* --------------------------------------------------------- */
+.contacto__bg {
+  border-top: 2px black solid;
+  background-color: salmon;
 }
 
-#servicios .servicios__title {
-  font-size: 4rem;
+.contacto__bg .contacto__title {
   text-align: center;
-  margin: 0 80px auto auto;
-  width: 100vw;
-  background-color: black;
+  font-size: 2rem;
+}
+
+.contacto__bg .contacto__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  margin: 0;
+}
+
+.contacto__bg .contacto__list {
+  list-style-type: none;
+  padding: 0 4px;
+}
+
+.contacto__bg .contacto__link {
+  font-size: 2rem;
+  color: black;
+}
+
+.contacto__bg .contacto__link:hover {
   color: white;
 }
 
+.contacto__bg .contacto__num {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+/* --------------------------------------------------------- */
+#servicios .servicios__title {
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0 auto 20px auto;
+}
+
 #servicios .servicios__text {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #servicios .servicios__text:hover {
@@ -446,16 +363,14 @@ body {
 }
 
 #servicios .servicios__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: flexbox;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #servicios .servicios__imgs {
@@ -466,6 +381,7 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  margin: auto;
 }
 
 #servicios .servicios__image {
@@ -517,50 +433,41 @@ body {
   transition: 0.5s;
 }
 
-.contacto__bg {
-  border-top: 2px black solid;
-  background-color: salmon;
-  background: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contacto__bg .contacto__title {
-  font-size: 2rem;
-}
-
-.contacto__bg .contacto__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px;
-}
-
-.contacto__bg .contacto__list {
-  list-style-type: none;
-  padding: 0 40px;
-}
-
-.contacto__bg .contacto__link {
-  font-size: 5rem;
-  color: black;
-}
-
-.contacto__bg .contacto__link:hover {
+#alquileres .card__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 80px auto;
+  width: 100vw;
+  background-color: black;
   color: white;
 }
 
-.contacto__num {
-  list-style-type: none;
+#alquileres .card__alquileres {
+  display: flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#alquileres .card__alquileres .card__img-main {
+  margin: auto 10px;
+}
+
+#alquileres .card__alquileres .card__img-main .card__text {
   font-size: 2rem;
-  margin: auto;
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+}
+
+#alquileres .turnos__title {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  color: white;
+  background-color: black;
 }
 
 #diseños {
@@ -568,12 +475,19 @@ body {
 }
 
 #diseños .diseños__title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 80px auto;
-  width: 100vw;
   background-color: black;
   color: white;
+}
+
+#diseños .slide {
+  display: none;
+}
+
+#diseños .slide__mobile {
+  text-align: center;
 }
 
 #diseños .diseño__main-btn {
@@ -598,51 +512,12 @@ body {
   transition: 0.5s;
 }
 
-#alquileres .card__title {
-  font-size: 4rem;
-  text-align: center;
-  margin: 80px auto;
-  width: 100vw;
-  background-color: black;
-  color: white;
-}
-
-#alquileres .card__alquileres {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-#alquileres .card__alquileres .card__img-main {
-  margin: auto 10px;
-}
-
-#alquileres .card__alquileres .card__img-main .card__text {
-  font-size: 2rem;
-  border-top: black 2px solid;
-  border-bottom: black 2px solid;
-}
-
-#alquileres .turnos__title {
-  font-size: 2rem;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-  height: 35px;
-  color: white;
-  background-color: black;
-}
-
 #servicios__main {
-  margin-top: 9vh;
+  margin-top: 12.5vh;
 }
 
 #servicios__main .card__title-servicios {
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 45px;
   margin-bottom: 1px;
@@ -653,34 +528,427 @@ body {
 }
 
 #servicios__main .card__title-serviciosh2 {
-  font-size: 1.6rem;
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
+  font-size: 1.8rem;
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+}
+
+#servicios__main .card__img {
+  width: 150px;
+  height: 150px;
 }
 
 #servicios__main .card__servicios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 2rem 5rem;
-  padding: 25px;
+  display: flexbox;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  border: black 5px solid;
   border-radius: 5px;
 }
 
 #servicios__main .card__servicios .card__img-main-servicios {
-  margin: auto 10px;
-  height: 650px;
-  width: 350px;
+  margin: 20px 10px;
   border: black 2px solid;
   border-radius: 5px;
 }
 
 #servicios__main .card__servicios .card__img-main-servicios .card__text-servicios {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@-webkit-keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar__menu.activado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: muestraMenu 350ms ease-in-out both;
+          animation: muestraMenu 350ms ease-in-out both;
+  height: 92vh;
+}
+
+.br-1.animado {
+  -webkit-transform: rotate(-45deg) translate(-10px, 8px);
+          transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado {
+  opacity: 0;
+}
+
+.br-3.animado {
+  -webkit-transform: rotate(45deg) translate(-10px, -8px);
+          transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.navbar__btn:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+  .navbar__btn {
+    right: 45px;
+  }
+  .navbar {
+    width: 100vw;
+  }
+  .contacto__bg {
+    border-top: 2px black solid;
+    background-color: salmon;
+    background: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto__bg .contacto__title {
+    font-size: 1.8rem;
+  }
+  .contacto__bg .contacto__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
+  .contacto__bg .contacto__list {
+    list-style-type: none;
+    padding: 0 10px;
+  }
+  .contacto__bg .contacto__link {
+    font-size: 3rem;
+    color: black;
+  }
+  .contacto__bg .contacto__link:hover {
+    color: white;
+  }
+  .contacto__num {
+    list-style-type: none;
+    font-size: 2rem;
+    margin: auto;
+  }
+  .bg {
+    padding-top: 1vh;
+    background: url(/img/fondo1.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  #servicios {
+    margin-top: 0px;
+  }
+  #servicios .servicios__title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 80px auto auto;
+    width: 100vw;
+    background-color: black;
+    color: white;
+  }
+  #servicios .servicios__text {
+    font-size: 2rem;
+  }
+  #servicios .servicios__text:hover {
+    color: white;
+    background-color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #servicios .servicios__main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 50px;
+  }
+  #servicios .servicios__imgs {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+    height: 250px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #servicios .servicios__image {
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
+  #servicios .servicios__img-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 183, 123, 0.6);
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #servicios .servicios__imgs:hover > .servicios__img-bg {
+    opacity: 1;
+    visibility: visible;
+  }
+  #servicios .servicios__text-bg {
+    font-size: 2rem;
+    padding: 15px;
+    margin-top: 25px;
+  }
+  #servicios .servicio__main-btn {
+    text-align: center;
+  }
+  #servicios .servicio__main-btn .servicio__btn {
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    border: solid black 2px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #servicios .servicio__main-btn .servicio__btn:hover {
+    color: white;
+    background-color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #servicios__main {
+    margin-top: 10vh;
+  }
+  #servicios__main .card__title-servicios {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 1px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+  }
+  #servicios__main .card__title-serviciosh2 {
+    font-size: 2.2rem;
+    -webkit-text-decoration: underline 1px;
+            text-decoration: underline 1px;
+  }
+  #servicios__main .card__img {
+    width: 200px;
+    height: 200px;
+  }
+  #servicios__main .card__servicios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #servicios__main .card__servicios .card__img-main-servicios {
+    margin: 20px 10px;
+    height: 600px;
+    border: black 2px solid;
+    border-radius: 5px;
+  }
+  #servicios__main .card__servicios .card__img-main-servicios .card__text-servicios {
+    font-size: 1.9rem;
+  }
+  #alquileres .card__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 80px auto 20px auto;
+    width: 100vw;
+    background-color: black;
+    color: white;
+  }
+  #alquileres .card__alquileres {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #alquileres .card__alquileres .card__img-main {
+    margin: 0px 5px;
+  }
+  #alquileres .card__alquileres .card__img-main .card__img-title {
+    font-size: 2rem;
+  }
+  #alquileres .card__alquileres .card__img-main .card__text {
+    font-size: 2rem;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+  }
+  #alquileres .turnos__title {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar__btn {
+    display: none;
+  }
+  .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    min-height: 8vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .navbar__menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 2vh;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    width: 60%;
+  }
+  .navbar__logo {
+    width: 35%;
+    height: 35%;
+  }
+  .navbar__list {
+    text-align: center;
+    padding: 0px;
+    margin: auto 10px auto 10px;
+  }
+  .navbar__link {
+    padding: 0px;
+    margin: 0px;
+  }
+  .navbar__link i {
+    display: inline;
+  }
+  .contacto__bg .contacto__title {
+    font-size: 2rem;
+  }
+  .contacto__bg .contacto__menu {
+    padding: 20px;
+  }
+  .contacto__bg .contacto__list {
+    padding: 0 15px;
+  }
+  .contacto__bg .contacto__link {
+    font-size: 3rem;
+  }
+  .contacto__bg .contacto__num {
+    font-size: 2rem;
+  }
+  #diseños {
+    margin-bottom: 30px;
+  }
+  #diseños .slide {
+    display: block;
+    margin-top: 50px;
+  }
+  #diseños .slide__mobile {
+    display: none;
+  }
+  #diseños .diseños__title {
+    margin: 50px auto 0px auto;
+  }
+  #diseños .diseño__main-btn {
+    margin-top: 40px;
+  }
+  #alquileres .card__title {
+    margin-top: 50px;
+  }
+  #servicios__main {
+    margin-top: 5vh;
+  }
+  #servicios__main .card__title-servicios {
+    font-size: 3.5rem;
+  }
+  #servicios__main .card__img {
+    width: 250px;
+    height: 250px;
+  }
+  #servicios__main .card__servicios {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #servicios__main .card__servicios .card__img-main-servicios {
+    height: 530px;
+  }
+  #servicios__main .card__servicios .card__img-main-servicios .card__text-servicios {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #servicios__main {
+    margin-top: 11.5vh;
+  }
+  #servicios__main .card__title-servicios {
+    font-size: 3.5rem;
+  }
+  #servicios__main .card__img {
+    width: 250px;
+    height: 250px;
+  }
+  #servicios__main .card__servicios {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #servicios__main .card__servicios .card__img-main-servicios {
+    height: 600px;
+  }
+  #servicios__main .card__servicios .card__img-main-servicios .card__text-servicios {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1750px) {
+  #servicios .servicios__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=main.css.map */

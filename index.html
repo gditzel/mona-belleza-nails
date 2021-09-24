@@ -52,7 +52,7 @@
                     </a>
                 </li>
             </ul>
-            <button class="navbar__btn"
+            <button class="navbar__btn navbar__btn-close"
                 type="button">
                 <span class="br-1"></span>
                 <span class="br-2"></span>
@@ -115,7 +115,7 @@
     <section id="servicios">
         <h1 class="servicios__title">Nuestros servicios</h1>
         <div class="servicios__main">
-            <div>
+            <div class="servicios__main-container">
                 <div class="servicios__imgs">
                     <img class="servicios__image"
                         src="/img/img1.png"
@@ -129,9 +129,10 @@
                 </div>
                 <h3 class="servicios__text">Uñas</h3>
             </div>
-            <div>
+            <div class="servicios__main-container">
                 <div class="servicios__imgs">
-                    <img src="/img/peinado2.jpg"
+                    <img class="servicios__image"
+                        src="/img/maquillaje2.jpg"
                         alt=""
                         width="250px"
                         height="250px">
@@ -140,9 +141,9 @@
                             Accusamus, similique.</p>
                     </div>
                 </div>
-                <h3 class="servicios__text">Peinados</h3>
+                <h3 class="servicios__text">Maquillajes y Peinados</h3>
             </div>
-            <div>
+            <div class="servicios__main-container">
                 <div class="servicios__imgs">
                     <img src="/img/servicio2.jpg"
                         alt=""
@@ -155,7 +156,7 @@
                 </div>
                 <h3 class="servicios__text">Dermaplanig</h3>
             </div>
-            <div>
+            <div class="servicios__main-container">
                 <div class="servicios__imgs">
                     <img src="/img/servicio5.jpg"
                         alt=""
@@ -168,7 +169,7 @@
                 </div>
                 <h3 class="servicios__text">Pedicuría</h3>
             </div>
-            <div>
+            <div class="servicios__main-container">
                 <div class="servicios__imgs">
                     <img src="/img/servicio10.jpg"
                         alt=""
@@ -181,7 +182,7 @@
                 </div>
                 <h3 class="servicios__text">Cosmiatría</h3>
             </div>
-            <div>
+            <div class="servicios__main-container">
                 <div class="servicios__imgs">
                     <img src="/img/servicio7.jpg"
                         alt=""
@@ -245,6 +246,29 @@
                 </li>
             </ul>
         </div>
+        <div class="slide__mobile">
+
+            <img width="150"
+                height="150"
+                src="/img/img1.png"
+                alt="">
+
+            <img width="150"
+                height="150"
+                src="/img/img2.png"
+                alt="">
+
+            <img width="150"
+                height="150"
+                src="/img/img3.png"
+                alt="">
+
+            <img width="150"
+                height="150"
+                src="/img/diseño17.jpg"
+                alt="">
+
+        </div>
         <div class="diseño__main-btn">
             <a href="/diseños.html">
                 <button class="diseño__btn"
@@ -258,7 +282,7 @@
         <h1 class="card__title">Nuestros Equipos</h1>
         <div class="card__alquileres">
             <div class="card__img-main">
-                <h2>Vela slim plus</h2>
+                <h2 class="card__img-title">Vela slim plus</h2>
                 <img src="/img/equipo1.jpg"
                     alt=""
                     width="250"
@@ -268,16 +292,16 @@
                 </p>
             </div>
             <div class="card__img-main">
-                <h2>Criolipolisis</h2>
+                <h2 class="card__img-title">Criolipolisis</h2>
                 <img src="/img/equipo2.jpg"
                     alt=""
                     width="250"
                     height="250">
-                <p class="card__text">La criolipólisis es una técnica innovadora para reducir la grasa localizada a
-                    través de la aplicación de frío.</p>
+                <p class="card__text">La criolipólisis es una técnica para reducir la grasa localizada a
+                    través de la aplicación de frio.</p>
             </div>
             <div class="card__img-main">
-                <h2>El original pulso magnético</h2>
+                <h2 class="card__img-title">Pulso magnético</h2>
                 <img src="/img/equipo4.jpg"
                     alt=""
                     width="250"
@@ -289,10 +313,10 @@
         <h1 class="turnos__title">Reserva tus equipos al 11-3251-9065, Viviana.</h1>
     </section>
 
-    <section id="turnos">
+    <!-- <section id="turnos">
         <script type="text/javascript"
             src="https://form.jotform.com/jsform/212617134821045"></script>
-    </section>
+    </section> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
@@ -301,10 +325,7 @@
     <script>
         $('.slide').hiSlide();
     </script>
-    <script type="text/javascript"
-        src="js/barba.min.js"></script>
-    <script type="text/javascript"
-        src="js/custom.js"></script>
+
     <script src="/js/main.js"></script>
 
 </body>

@@ -1,19 +1,27 @@
-.grid-container {
-    margin: 30px auto;
-  }
-  
-  .grid-item {
-    width: 230px;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    background-color: lightgray;
-  }
-  
-  .grid-item:hover {
-    filter: opacity(0.9);
-  }
+#grid__main{
+  margin-top: 16vh;
+}
 
-  .imagen2{
-      margin-top: 20px;
-  }
+.grid-container {
+  margin: 30px auto;
+}
+  
+.grid-item {
+  width: 230px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: lightgray;  
+}
+  
+.grid-item:hover {
+  filter: opacity(0.9);
+}
+
+.imagen2{
+  margin-top: 20px;
+}
+
+.imagen3{
+  margin-top: 30px;
+}
 

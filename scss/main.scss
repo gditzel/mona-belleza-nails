@@ -2,28 +2,89 @@
 @import 'components/navbar';
 @import 'components/btn';
 @import 'components/slider';
-@import 'utils/animations';
-@import 'layout/screens';
-@import 'utils/variables';
 @import 'layout/diseño';
 
-.main-container{
-    margin: 200px auto;
-    width: 400px;
-    height: 500px;
-    text-align: center;
+$primary-color: white;
+$secondary-color: black;
+$terciary-color: salmon;
+
+    .navbar__btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 25px;
+        -webkit-transition: 0.2s  0.1s;
+        transition: 0.2s  0.1s;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .navbar__logo {
+        padding-left: 25px;
+        width: 30%;
+        height: 30%;
+        top: 5px;
+        margin: 0;
+    }
+
+    .navbar__menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 2vh;
+        margin: 0;
+        padding: 0;
+        display: none;
+        opacity: 0;
+        width: 100%;
+    }
+
+    .navbar__list {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar__link i{
+        display: none;
+    }
+
+/* --------------------------------------------------------- */
+    .main-container{
+        margin: 150px auto auto auto;
+        width: 350px;
+        height: 500px;
+        text-align: center;
+        justify-content: center;
+    }
 
     .main__title{
         background-color: $secondary-color;
         color: $primary-color;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
-
+    
     .main__text{
         font-size: 1.5rem;
         font-weight: 600;
     }
-
+    
     .main__btn{
         background-color: transparent;
         width: 200px;
@@ -32,6 +93,72 @@
         font-size: 1.6rem;
         font-weight: 700;
         cursor: pointer;
+    }
+
+    .main__btn:hover{
+        color: $primary-color;
+        background-color: $secondary-color;
+        transition: 0.5s;
+    }
+    
+    .bg{
+        padding-top: 1vh;
+        background: url(/img/fondo.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+/* --------------------------------------------------------- */
+
+.contacto__bg{
+    border-top: 2px $secondary-color solid;
+    background-color: $terciary-color;
+
+    .contacto__title{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contacto__menu{
+        display: flex;
+        padding: 2px;
+        margin: 0;
+    }
+
+    .contacto__list{
+        list-style-type: none;
+        padding: 0 4px;
+    }
+
+    .contacto__link{
+        font-size: 2rem;
+        color: $secondary-color;
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    
+    .contacto__num{
+        list-style-type: none;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+}
+
+/* --------------------------------------------------------- */
+
+#servicios{
+
+    .servicios__title{
+        font-size: 2.5rem;
+        text-align: center;
+        background-color: $secondary-color;
+        color: $primary-color;
+        margin: 0 auto 20px auto;
+    }
+
+    .servicios__text{
+        font-size: 1.5rem;
 
         &:hover{
             color: $primary-color;
@@ -39,12 +166,277 @@
             transition: 0.5s;
         }
     }
+
+    .servicios__main{
+        display: flexbox;
+        align-items:center;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .servicios__imgs{
+        clip-path: circle(50% at 50% 50%);
+        height: 250px;
+        width: 250px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .servicios__image{
+        transition: all 500ms ease-in-out;
+    }
+
+    .servicios__img-bg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(11,183,123,0.6);
+        transition: all 500ms ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .servicios__imgs:hover  > .servicios__img-bg{
+        opacity: 1;
+        visibility: visible; 
+    }
+
+    .servicios__text-bg{
+        font-size: 2rem;
+        padding: 15px;
+        margin-top: 25px;
+    }
+
+    .servicio__main-btn{
+
+        text-align: center;
+
+        .servicio__btn{
+            background-color: transparent;
+            width: 200px;
+            height: 50px;
+            border: solid $secondary-color 2px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            cursor: pointer;
+        
+            &:hover{
+                color: $primary-color;
+                background-color: $secondary-color;
+                transition: 0.5s;
+            }  
+        }
+    }
+        
+}
+
+#alquileres{
+    
+    .card__title{
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 80px auto;
+        width: 100vw;
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+
+    .card__alquileres{
+        display: flexbox;
+        align-items: center;
+        text-align: center;
+
+        .card__img-main{
+            margin: auto 10px;
+            
+            .card__text{
+                font-size: 2rem;
+                border-top: $secondary-color 2px solid;
+                border-bottom: $secondary-color 2px solid;
+            }   
+        }
+    }
+
+    .turnos__title{
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        height: 35px;
+        color: $primary-color;
+        background-color: $secondary-color;
+    }
+}
+
+#diseños{
+
+    margin-bottom: 10vh;
+
+    .diseños__title{
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 80px auto;
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+
+    .slide{
+        display: none;
+    }
+
+    .slide__mobile{
+        text-align: center;
+    }
+    .diseño__main-btn{
+
+        margin-top: 10rem;
+        text-align: center;
+
+        .diseño__btn{
+            background-color: transparent;
+            width: 200px;
+            height: 50px;
+            border: solid $secondary-color 2px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            cursor: pointer;
+        
+            &:hover{
+                color: $primary-color;
+                background-color: $secondary-color;
+                transition: 0.5s;
+            }  
+        }
+    }
+}
+
+#servicios__main{
+    
+    margin-top: 12.5vh;
+
+    .card__title-servicios{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 1px;
+        width: 100vw;
+        background-color: $secondary-color;
+        color: $primary-color;
+        display: inline-block;
+    }
+
+    .card__title-serviciosh2{
+        font-size: 1.8rem;
+        text-decoration: underline 1px;
+    }
+
+    .card__img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .card__servicios{
+        display: flexbox;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+
+        .card__img-main-servicios{
+            margin: 20px 10px;
+            border: $secondary-color 2px solid;
+            border-radius: 5px;
+            
+            .card__text-servicios{
+                font-size: 1.5rem;
+            }   
+        }
+    }
+}
+
+    @keyframes muestraMenu {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    
+    .navbar__menu.activado { 
+        display:flex; 
+        animation: muestraMenu 350ms ease-in-out both;
+        height: 92vh;
+    }
+    
+    .br-1.animado {
+        transform: rotate(-45deg) translate(-10px, 8px);
+    }
+      
+    .br-2.animado {
+        opacity: 0;
+    }
+    
+    .br-3.animado {
+        transform: rotate(45deg) translate(-10px, -8px);
+    }
+    
+    .navbar__btn:hover {
+        transform:rotate(90deg);
+    }
+
+@media (min-width: 768px) {
+
+    .navbar__btn {
+        right: 45px;
+    }
+
+    .navbar{
+        width: 100vw;
+    }
+
+    .contacto__bg{
+    border-top: 2px $secondary-color solid;
+    background-color: $terciary-color;
+    background: cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    .contacto__title{
+        font-size: 1.8rem;
+    }
+
+    .contacto__menu{
+        display: flex;
+        padding: 10px;
+    }
+
+    .contacto__list{
+        list-style-type: none;
+        padding: 0 10px;
+    }
+
+    .contacto__link{
+        font-size: 3rem;
+        color: $secondary-color;
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    
+}
+
+.contacto__num{
+    list-style-type: none;
+    font-size: 2rem;
+    margin: auto;
 }
 
 .bg{
+    padding-top: 1vh;
     background: url(/img/fondo1.jpg) no-repeat center center fixed;
     background-size: cover;
-    height: 85vh;
+
 }
 
 #servicios{
@@ -71,11 +463,12 @@
     }
 
     .servicios__main{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items:center;
         text-align: center;
         justify-content: space-around;
-        margin: 100px;
+        margin: 50px;
     }
     
     .servicios__imgs{
@@ -132,81 +525,46 @@
                 transition: 0.5s;
             }  
         }
-    }
-        
+    }  
 }
 
-.contacto__bg{
-    border-top: 2px $secondary-color solid;
-    background-color: $terciary-color;
-    background: cover;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-
-    .contacto__title{
-        font-size: 2rem;
-    }
-
-    .contacto__menu{
-        display: flex;
-        padding: 20px;
-    }
-
-    .contacto__list{
-        list-style-type: none;
-        padding: 0 40px;
-    }
-
-    .contacto__link{
-        font-size: 5rem;
-        color: $secondary-color;
-
-        &:hover{
-            color: $primary-color;
-        }
-    }
+#servicios__main{
     
-}
+    margin-top: 10vh;
 
-.contacto__num{
-    list-style-type: none;
-    font-size: 2rem;
-    margin: auto;
-}
-
-#diseños{
-
-    margin-bottom: 10vh;
-
-    .diseños__title{
-        font-size: 4rem;
+    .card__title-servicios{
+        font-size: 2.5rem;
         text-align: center;
-        margin: 80px auto;
+        margin-top: 45px;
+        margin-bottom: 1px;
         width: 100vw;
         background-color: $secondary-color;
         color: $primary-color;
     }
 
-    .diseño__main-btn{
+    .card__title-serviciosh2{
+        font-size: 2.2rem;
+        text-decoration: underline 1px;
+    }
 
-        margin-top: 10rem;
-        text-align: center;
+    .card__img{
+        width: 200px;
+        height: 200px;
+    }
 
-        .diseño__btn{
-            background-color: transparent;
-            width: 200px;
-            height: 50px;
-            border: solid $secondary-color 2px;
-            font-size: 1.6rem;
-            font-weight: 700;
-            cursor: pointer;
-        
-            &:hover{
-                color: $primary-color;
-                background-color: $secondary-color;
-                transition: 0.5s;
-            }  
+    .card__servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .card__img-main-servicios{
+            margin: 20px 10px;
+            height: 600px;
+            border: $secondary-color 2px solid;
+            border-radius: 5px;
+            
+            .card__text-servicios{
+                font-size: 1.9rem;
+            }   
         }
     }
 }
@@ -214,21 +572,26 @@
 #alquileres{
     
     .card__title{
-        font-size: 4rem;
+        font-size: 2.5rem;
         text-align: center;
-        margin: 80px auto;
+        margin: 80px auto 20px auto;
         width: 100vw;
         background-color: $secondary-color;
         color: $primary-color;
     }
 
     .card__alquileres{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         text-align: center;
 
         .card__img-main{
-            margin: auto 10px;
+            margin: 0px 5px;
+
+            .card__img-title{
+                font-size: 2rem;
+            }
             
             .card__text{
                 font-size: 2rem;
@@ -240,57 +603,180 @@
 
     .turnos__title{
         font-size: 2rem;
-        margin: 0;
-        text-align: center;
-        width: 100%;
-        height: 35px;
-        color: $primary-color;
-        background-color: $secondary-color;
+        margin-top: 20px;
     }
 }
 
-#servicios__main{
-    
-    margin-top: 9vh;
+}
 
-    .card__title-servicios{
-        font-size: 4rem;
-        text-align: center;
-        margin-top: 45px;
-        margin-bottom: 1px;
-        width: 100vw;
-        background-color: $secondary-color;
-        color: $primary-color;
-        display: inline-block;
+@media (min-width: 1024px){
+
+    .navbar__btn {
+        display: none;
     }
 
-    .card__title-serviciosh2{
-        font-size: 1.6rem;
-        text-decoration: underline 2px;
-    }
-
-    .card__servicios{
+    .navbar {
+        flex-direction: row;
         display: flex;
-        margin: 2rem 5rem;
-        padding: 25px;
         align-items: center;
-        text-align: center;
-        border: $secondary-color 5px solid;
-        border-radius: 5px;
+        justify-content: space-around;
+        position: fixed;
+        min-height: 8vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .navbar__menu {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 2vh;
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+        width: 60%;
+    }
 
-        .card__img-main-servicios{
-            margin: auto 10px;
-            height: 650px;
-            width: 350px;
-            border: $secondary-color 2px solid;
-            border-radius: 5px;
-            
-            .card__text-servicios{
-                font-size: 2rem;
-            }   
+    .navbar__logo{
+        width: 35%;
+        height: 35%;
+    }
+
+    .navbar__list {
+        text-align: center;
+        padding: 0px;
+        margin: auto 10px auto 10px;
+    }
+
+    .navbar__link{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar__link i{
+        display: inline;
+    }
+    
+    .contacto__bg{
+
+        .contacto__title{
+            font-size: 2rem;
+        }
+    
+        .contacto__menu{
+            padding: 20px;
+        }
+    
+        .contacto__list{
+            padding: 0 15px;
+        }
+    
+        .contacto__link{
+            font-size: 3rem;
+        }
+        
+        .contacto__num{
+            font-size: 2rem;
         }
     }
-}
+
+    #diseños{
+
+        margin-bottom: 30px;
+
+        .slide{
+            display: block;
+            margin-top: 50px;
+        }
+
+        .slide__mobile{
+            display: none;
+        }
+
+        .diseños__title{
+            margin: 50px auto 0px auto;
+        }
+
+        .diseño__main-btn{
+            margin-top: 40px;
+        }
+    }
+
+    #alquileres{
+
+        .card__title{
+            margin-top: 50px;
+        }
+    }
+
+    #servicios__main{
+    
+        margin-top: 5vh;
+    
+        .card__title-servicios{
+            font-size: 3.5rem;
+        }
+    
+        .card__img{
+            width: 250px;
+            height: 250px;
+        }
+    
+        .card__servicios{
+            grid-template-columns: 1fr 1fr;
+     
+            .card__img-main-servicios{
+                height: 530px;
+                
+                .card__text-servicios{
+                    font-size: 1.8rem;
+                }   
+            }
+        }
+    }
+} 
+
+@media (min-width: 1440px){
+
+    #servicios__main{
+    
+        margin-top: 11.5vh;
+    
+        .card__title-servicios{
+            font-size: 3.5rem;
+        }
+    
+        .card__img{
+            width: 250px;
+            height: 250px;
+        }
+    
+        .card__servicios{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .card__img-main-servicios{
+                height: 600px;
+                
+                .card__text-servicios{
+                    font-size: 1.8rem;
+                }   
+            }
+        }
+    }
+} 
+
+@media (min-width: 1750px){
+
+    #servicios{
+
+        .servicios__main{
+            display: flex;
+        }
+    }
+} 
+
 
 
 
